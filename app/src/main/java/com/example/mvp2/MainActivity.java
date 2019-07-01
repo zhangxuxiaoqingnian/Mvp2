@@ -1,5 +1,6 @@
 package com.example.mvp2;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
@@ -14,6 +15,7 @@ import io.reactivex.disposables.Disposable;
 
 public class MainActivity extends BaseActivity<Loginpresenter> implements Loginview{
 
+
     @Override
     public Loginpresenter initPresenter() {
         return new Loginpresenter(this);
@@ -27,7 +29,7 @@ public class MainActivity extends BaseActivity<Loginpresenter> implements Loginv
     @Override
     public void initView() {
 
-
+        System.out.println("大家好才是真的好");
         presenter.getdiao("15810672623","123456");
 
     }
