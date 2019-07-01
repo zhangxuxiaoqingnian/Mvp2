@@ -29,7 +29,8 @@ public class MainActivity extends BaseActivity<Loginpresenter> implements Loginv
     @Override
     public void initView() {
 
-        System.out.println("大家好才是真的好");
+
+        System.out.println("才是真的好");
         presenter.getdiao("15810672623","123456");
 
     }
